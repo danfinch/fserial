@@ -1,0 +1,23 @@
+
+FSerial is an F# JSON/BSON mapping library.
+
+  * Serializes and deserializes objects to and from JSON/BSON
+  * Maps F# records, discriminated unions, and collections
+  * Maps .NET classes, enums, structs, and collections
+
+Dependencies (included):
+
+  * FSharp PowerPack
+  * Futility: https://github.com/danfinch/futility
+  * JSON.NET: http://json.codeplex.com/
+  
+License: Apache 2.0
+
+Copyrights:
+
+  * All code (c) 2012 Promitheia
+
+Maintainers:
+
+  * Dan Finch (d@nfin.ch)
+
