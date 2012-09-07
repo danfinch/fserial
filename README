@@ -5,9 +5,8 @@ FSerial is an F# JSON/BSON mapping library.
   * Maps F# records, discriminated unions, and collections
   * Maps .NET classes, enums, structs, and collections
 
-Dependencies (included):
+Dependencies (submodules):
 
-  * FSharp PowerPack
   * Futility: https://github.com/danfinch/futility
   * JSON.NET: http://json.codeplex.com/
   
