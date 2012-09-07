@@ -1,0 +1,6 @@
+[submodule "lib/jsonnet"]
+	path = lib/jsonnet
+	url = https://github.com/JamesNK/Newtonsoft.Json.git
+[submodule "lib/futility"]
+	path = lib/futility
+	url = https://github.com/danfinch/futility.git
