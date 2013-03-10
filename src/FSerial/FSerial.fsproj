@@ -5,11 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{8958c7c8-6ba5-4574-99da-7d5224598551}</ProjectGuid>
+    <ProjectGuid>{8958C7C8-6BA5-4574-99DA-7D5224598551}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>FSerial</RootNamespace>
     <AssemblyName>FSerial</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <Name>FSerial</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -32,24 +31,14 @@
     <DocumentationFile>bin\Release\FSerial.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FSharp.PowerPack">
-      <HintPath>..\..\lib\powerpack\bin\FSharp.PowerPack.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Futility">
-      <HintPath>..\..\lib\futility\$(Configuration)\Futility.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\lib\jsonnet\Newtonsoft.Json.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Xml" />
+    <Reference Include="FSharp.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FSerial.fs" />
@@ -63,4 +52,14 @@
 	<Target Name="AfterBuild">
 	</Target>
 	-->
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\futility\src\Futility\Futility.fsproj">
+      <Project>9982C39B-74B0-4B7A-B658-905777359DAD</Project>
+      <Name>Futility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\jsonnet\Src\Newtonsoft.Json\Newtonsoft.Json.csproj">
+      <Project>{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}</Project>
+      <Name>Newtonsoft.Json</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
