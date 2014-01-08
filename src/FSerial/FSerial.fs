@@ -5,6 +5,7 @@ module FSerial
 // todo: serialize DU cases which don't have values as strings?
 // todo: byte[]
 // todo: extensibility (put functions into types)
+// todo: add compiler flag to turn on RavenDB support
 
 open System
 open System.Reflection
